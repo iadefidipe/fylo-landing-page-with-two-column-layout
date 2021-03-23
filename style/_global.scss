@@ -1,0 +1,49 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+}
+
+a, a:hover, a:active{
+    text-decoration: none;
+    font-family: $font-openSans;
+    font-weight:  $font-regular;
+    font-size: 0.875rem;
+}
+
+.container{
+    margin: 0px 20px;
+}
+
+h1,h2{
+    font-weight: $font-bold;
+    font-family: $font-raleway;
+}
+
+h1{
+    font-size: 1.3rem;
+
+}
+
+h2{
+    font-size: 1rem;
+}
+
+p{
+    font-family: $font-openSans;
+    font-weight: $font-regular;
+    font-size: 0.85rem;
+}

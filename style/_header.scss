@@ -1,0 +1,30 @@
+header{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+
+    }
+
+    nav{
+        a{
+
+            &:not(:first-child){
+                margin-left: 10px;
+            }
+
+        }
+        
+    }
+
+    img{
+        display: block;
+        height: auto;
+        // width: 100%;
+    }
+
+
+
+
+}
