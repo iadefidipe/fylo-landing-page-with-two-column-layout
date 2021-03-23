@@ -15,15 +15,15 @@ html {
   padding: 0;
 }
 
+body {
+  margin: 0px 20px;
+}
+
 a, a:hover, a:active {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
-}
-
-.container {
-  margin: 0px 20px;
 }
 
 h1, h2 {
@@ -65,5 +65,11 @@ header nav a:not(:first-child) {
 header img {
   display: block;
   height: auto;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

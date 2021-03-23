@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    
+    margin: 0px 20px;
 }
 
 a, a:hover, a:active{
@@ -24,9 +24,7 @@ a, a:hover, a:active{
     font-size: 0.875rem;
 }
 
-.container{
-    margin: 0px 20px;
-}
+
 
 h1,h2{
     font-weight: $font-bold;
