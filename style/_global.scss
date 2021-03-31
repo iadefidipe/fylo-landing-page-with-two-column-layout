@@ -10,9 +10,7 @@ html{
     padding: 0;
 }
 
-*{
-    
-}
+
 
 body{
     // margin: 0px 50px;
@@ -22,7 +20,7 @@ a, a:hover, a:active{
     text-decoration: none;
     font-family: $font-openSans;
     font-weight:  $font-regular;
-    font-size: 0.875rem;
+    font-size: $font-sz-a;
 }
 
 
@@ -40,11 +38,11 @@ h1{
 }
 
 h2{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
 }
 
 h3{
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 p{
@@ -64,10 +62,43 @@ img{
 }
 
 .logo{
-    width: 167px;
-    height: 49px;
+    width: 10.4375rem;
+    height: 3.0625rem;
         @media (max-width:556px){
-            width:117px;
-            height: 39px;
+            width:7.3125rem;
+            height: 2.4375rem;
         }
+}
+
+i {
+    font-size: 2rem;
+    color: $white;
+}
+
+.flex{
+    display:flex;
+
+    &-sa{
+        justify-content: space-around;
+    }
+
+    &-sb{
+        justify-content: space-between;
+    }
+    
+    &-se{
+        justify-content: space-evenly;
+    }
+
+
+    &-al{
+        align-items: center;
+    }
+
+    &-fd{
+        flex-direction: column;
+    }
+    &-wrap{
+        flex-wrap: wrap;
+    }
 }

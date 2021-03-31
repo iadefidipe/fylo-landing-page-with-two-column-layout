@@ -28,9 +28,9 @@
 <body>
 
 
-  <header>
+  <header class="flex flex-sb flex-al">
     <img src="./images/logo.svg" alt="Fylo logo" class="logo">
-    <nav>
+    <nav class="flex flex-al">
       <a href="">Features</a><a href="">Team</a><a href="">Sign In</a>
     </nav>
   </header>
@@ -40,29 +40,27 @@
   
 
   <main>
-    <section class="hero" >
+    <section class="hero flex  flex-al" >
       <div class="hero__text">
-        <h1>
-              All your files in one secure location, accessible anywhere.
-              
-            </h1>
+        <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>
-              Fylo stores your most important files in one secure location.Access them wherever you need, share and collaborate with friends,
+          Fylo stores your most important files in one secure location.Access them wherever you need, share and collaborate with friends,
               family, and co-workers.
-            </p>
-        <div class="hero__input">
-              <input type="email" name="email" id="email" placeholder="Enter your email...">
-              <a href="#" role="button">Get Started</a>
-            </div>
+        </p>
+          <form action="#" class="hero__form">
+            <input type="email" name="email" id="email" placeholder="Enter your email..." class="form__email">
+            <input type="button" value="Get Started" class="form__button">
+          </form>
+            
       </div>
       <div class="hero__image">
         <img src="./images/illustration-1.svg" alt="">
       </div>
     </section>
 
-    <section class="testimonial">
+    <section class="testimonial flex flex-sb flex-al">
       <aside>
-        <h1>Stay productive, wherever you are</h1>
+        <h2>Stay productive, wherever you are</h2>
         <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
         
         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
@@ -78,7 +76,7 @@
             Fylo has improved our team productivity by an order of magnitude. Since
             making the switch our team has become a well-oiled collaboration machine.
           </p>
-          <div class="card-profile">
+          <div class="card-profile flex flex-al">
             
             <img src="./images/avatar-testimonial.jpg" alt="">
             <div class="name">
@@ -93,27 +91,28 @@
       
     </section >
 
-    <section class="form">
+    <section class="subscription flex flex-sb ">
       
-      <div class="form__copy">
+      <div class="subscription__copy">
         <h2>Get early access today</h2>
-        <p>
-              It only takes a minute to sign up and our free starter tier is extremely generous.
-              If you have any questions, our support team would be happy to help you.
+        <p>It only takes a minute to sign up and our free starter tier is extremely generous.
+        If you have any questions, our support team would be happy to help you.
         </p>
       </div>
           
-      <div class="form-input">
-        <input type="email" name="email" id="email" placeholder="email@example.com">
-        <a href="">Get Started For Free</a></div>
+      
+        <form action="#" class="subscription__form">
+          <input type="email" name="email" id="form-email" placeholder="email@example.com" class="subscription-email">
+          <input type="button" value="Get Started For Free" class="subscription-button">
+        </form>
       
     </section>
 
   </main>
 
   <footer class="footer">
-    <div class="footer__link">
-      <img src="./images/logo.svg" alt="fylo logo" class="logo">
+    <div class="footer__logo logo">
+      <img src="./images/footer logo.svg" alt="fylo logo" class="logo">
     </div>
 
     <div class="footer__options">
@@ -137,9 +136,9 @@
         <a href="">Privacy</a>
       </div>
       <div class="footer-sm">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
       </div>
     </div>
     

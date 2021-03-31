@@ -1,32 +1,66 @@
 .footer{
     background: $clr-darkBlue;
-    .logo{
-        color: $white;
+    padding: 110px 80px;
+    &__logo{
+        .logo{
+            color: white;
+        }
     }
 
     &__options{
-        .footer-contact{
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-            
-            img{
-                width: 20px;
-                height: 20px;
-            }
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
 
-            p{
-                color: $white;
-                margin-left: 20px;
+        .footer-contact{
+            .contact{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+
+                p{
+                    color: $white;
+                    margin-left: 20px;
+                }
+
             }
+            
 
             
         }
+
+
 
         .footer-links{
             display: grid;
             grid-template-columns: repeat(2, minmax(10px,auto));
             grid-template-rows: repeat(4, minmax(10px, auto));
+            grid-row-gap: 20px;
+            grid-column-gap: 50px;
+            a{
+                color: $white;
+            }
+        }
+
+        .footer-sm{
+            a{
+                
+
+                i{
+                    
+                    
+                    // margin: auto;
+                }
+
+                &:not(:first-child){
+                    margin-left: 10px;
+                }
+            }
         }
 
 
