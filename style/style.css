@@ -54,13 +54,11 @@ img {
 
 .logo {
   width: 10.4375rem;
-  height: 3.0625rem;
 }
 
 @media (max-width: 556px) {
   .logo {
-    width: 7.3125rem;
-    height: 2.4375rem;
+    width: 30%;
   }
 }
 
@@ -114,6 +112,12 @@ header {
   padding: 1.25rem 3.125rem 0 3.125rem;
 }
 
+@media (max-width: 556px) {
+  header {
+    padding: 1.875rem 2.125rem;
+  }
+}
+
 header img {
   display: inline-block;
 }
@@ -132,7 +136,7 @@ header nav a:not(:first-child) {
 
 @media (max-width: 500px) {
   header nav a:not(:first-child) {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
   }
 }
 
