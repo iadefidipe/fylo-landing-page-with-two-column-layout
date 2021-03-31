@@ -20,7 +20,11 @@ a, a:hover, a:active{
     text-decoration: none;
     font-family: $font-openSans;
     font-weight:  $font-regular;
-    font-size: $font-sz-a;
+    font-size: $font-sz;
+    @media (max-width:600px) {
+        font-size: $font-sz-mobile;
+                
+    }
 }
 
 
@@ -31,9 +35,14 @@ h1,h2,h3{
 }
 
 h1{
-    font-size: 2.2rem;
+    font-size: $font-sz-h1;
     color: $clr-darkBlue;
-    line-height: 3rem;
+    line-height: $line-height-h1;
+
+    @media (max-width: 768px) {
+        font-size: $font-sz-h1-mobile;
+        line-height: $line-height-h1-mobile;
+    }
 
 }
 
@@ -48,10 +57,13 @@ h3{
 p{
     font-family: $font-openSans;
     font-weight: $font-regular;
-    font-size: 0.875rem;
+    font-size: $font-sz;
     color: $clr-darkBlue;
-    line-height: 1.3rem;
-    
+    line-height: $line-height;
+    @media (max-width:600px) {
+        font-size: $font-sz-mobile; 
+    }
+
 }
 
 img{
@@ -63,10 +75,11 @@ img{
 
 .logo{
     width: 10.4375rem;
-    // height: 3.0625rem;
+   
+
         @media (max-width:556px){
             width:30%;
-            // height: 2.4375rem;
+            
         }
 }
 

@@ -2,24 +2,29 @@
 .hero{
     margin: 6.25rem 3.125rem 0 3.125rem;
     color: $clr-darkBlue;
-    @media (max-width: 556px) {
-        margin: 5rem 2.1875rem 0 2.1875rem;  
+    @media (max-width: 768px) {
+        margin: 0 2.1875rem 0 2.1875rem;  
         flex-direction: column-reverse;             
     }
     
 
     &__text{
         width:45%;
-        @media (max-width: 556px) {
-            margin: auto;
+        @media (max-width: 768px) {
+            margin: 1.25rem auto 0 auto;
             width: 100%; 
-            text-align: center;           
+            text-align: center; 
+            
         }
 
         > p{
             margin: 0.625rem auto;
             width: 80%;
             font-family: $font-raleway;
+            @media (max-width:768px){
+                width:100%;
+            }
+
         }
 
         .hero__form{
@@ -36,7 +41,7 @@
                     font-size: 0.875rem;
                     opacity: 0.5;
                 }
-                @media (max-width: 556px) {
+                @media (max-width: 768px) {
                     margin: auto;
                     margin-top: 10px;
                     width: 100%
@@ -58,7 +63,7 @@
                     background: $clr-cyan;
                 }
 
-                @media (max-width: 556px) {
+                @media (max-width: 768px) {
                     margin: 10px auto;
                     width: 100%
                 }
@@ -69,11 +74,10 @@
 
     &__image{
         width: 42.375rem;
-        height: 30.8125rem;
-        @media (max-width: 556px) {
+        
+        @media (max-width: 768px) {
             margin-top: 100px;
-            width: 27.375rem;
-            height: 20.0625rem;           
+            width: 90%;
         }
     }
     
