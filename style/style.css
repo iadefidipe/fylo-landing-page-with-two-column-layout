@@ -19,6 +19,12 @@ a, a:hover, a:active {
   font-size: 0.875rem;
 }
 
+@media (max-width: 600px) {
+  a, a:hover, a:active {
+    font-size: 0.75rem;
+  }
+}
+
 h1, h2, h3 {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
@@ -30,7 +36,7 @@ h1 {
   line-height: 3rem;
 }
 
-@media (max-width: 556px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 1.3rem;
     line-height: 2rem;
@@ -51,6 +57,12 @@ p {
   font-size: 0.875rem;
   color: #070439;
   line-height: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 0.75rem;
+  }
 }
 
 img {
@@ -147,12 +159,6 @@ header nav a:not(:first-child) {
   }
 }
 
-@media (max-width: 600px) {
-  header nav a {
-    font-size: 0.75rem;
-  }
-}
-
 .hero {
   margin: 6.25rem 3.125rem 0 3.125rem;
   color: #070439;
@@ -174,15 +180,15 @@ header nav a:not(:first-child) {
 
 @media (max-width: 768px) {
   .hero__text {
-    margin: 1.25rem auto 0 auto;
+    margin-top: 1.25rem;
     width: 100%;
     text-align: center;
   }
 }
 
 .hero__text > p {
-  margin: 0.625rem auto;
-  width: 80%;
+  margin: 0.625rem 0;
+  width: 95%;
   font-family: "Raleway", sans-serif;
 }
 
@@ -196,46 +202,67 @@ header nav a:not(:first-child) {
   margin-top: 0.625rem;
 }
 
-.hero__text .hero__form input[type=email] {
-  width: 20rem;
+.hero__text .hero__form input[type="email"] {
+  width: 60%;
   padding: 1.125rem 0 1.125rem 1.3125rem;
   border: 1.5px solid black;
   border-radius: 5px;
 }
 
-.hero__text .hero__form input[type=email]::-webkit-input-placeholder {
+.hero__text .hero__form input[type="email"]::-webkit-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   opacity: 0.5;
 }
 
-.hero__text .hero__form input[type=email]:-ms-input-placeholder {
+.hero__text .hero__form input[type="email"]:-ms-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   opacity: 0.5;
 }
 
-.hero__text .hero__form input[type=email]::-ms-input-placeholder {
+.hero__text .hero__form input[type="email"]::-ms-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   opacity: 0.5;
 }
 
-.hero__text .hero__form input[type=email]::placeholder {
+.hero__text .hero__form input[type="email"]::placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+  .hero__text .hero__form input[type="email"]::-webkit-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .hero__text .hero__form input[type="email"]:-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .hero__text .hero__form input[type="email"]::-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .hero__text .hero__form input[type="email"]::placeholder {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero__text .hero__form input[type="email"] {
+    width: 30%;
+  }
 }
 
 @media (max-width: 768px) {
-  .hero__text .hero__form input[type=email] {
+  .hero__text .hero__form input[type="email"] {
     margin: auto;
     margin-top: 10px;
     width: 100%;
   }
 }
 
-.hero__text .hero__form input[type=button] {
+.hero__text .hero__form input[type="button"] {
   margin-left: 1.25rem;
   background: #3065f8;
   padding: 1.125rem 3.125rem;
@@ -248,19 +275,26 @@ header nav a:not(:first-child) {
   border-radius: 5px;
 }
 
-.hero__text .hero__form input[type=button]:hover {
+.hero__text .hero__form input[type="button"]:hover {
   background: #3c9f8f;
 }
 
+@media (max-width: 1200px) {
+  .hero__text .hero__form input[type="button"] {
+    margin-left: 1rem;
+    font-size: 0.75rem;
+  }
+}
+
 @media (max-width: 768px) {
-  .hero__text .hero__form input[type=button] {
+  .hero__text .hero__form input[type="button"] {
     margin: 10px auto;
     width: 100%;
   }
 }
 
 .hero__image {
-  width: 42.375rem;
+  width: 50%;
 }
 
 @media (max-width: 768px) {
