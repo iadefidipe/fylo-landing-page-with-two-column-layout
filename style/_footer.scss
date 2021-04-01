@@ -2,12 +2,10 @@
     background: $clr-darkBlue;
     padding: 110px 80px;
     @media (max-width:768px) {
-        padding: 55px 40px;
+        padding: 55px 30px;
         
     }
-    &__logo{
     
-    }
 
     &__options{
         margin-top: 20px;
@@ -58,6 +56,11 @@
         }
 
         .footer-sm{
+
+            @media (max-width:768px){
+                margin: 20px auto 0 auto;
+            }
+
             a{
 
                 &:not(:first-child){

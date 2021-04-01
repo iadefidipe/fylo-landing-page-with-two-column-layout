@@ -47,6 +47,13 @@ h2 {
   font-size: 1.9rem;
 }
 
+@media (max-width: 556px) {
+  h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
 h3 {
   font-size: 0.75rem;
 }
@@ -84,6 +91,12 @@ img {
 i {
   font-size: 2rem;
   color: white;
+}
+
+@media (max-width: 768px) {
+  i {
+    font-size: 1rem;
+  }
 }
 
 .flex {
@@ -305,6 +318,7 @@ header nav a:not(:first-child) {
   }
 }
 
+/* hero section with testimonial card */
 .testimonial {
   margin-top: 12.5rem;
   padding: 6.875rem 5rem;
@@ -314,7 +328,7 @@ header nav a:not(:first-child) {
   background-position: top;
 }
 
-@media (max-width: 556px) {
+@media (max-width: 768px) {
   .testimonial {
     margin-top: 6.25rem;
     background-image: url(/images/bg-curve-mobile.svg);
@@ -322,17 +336,25 @@ header nav a:not(:first-child) {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding: 6.875rem 2rem;
   }
 }
 
 @media (max-width: 768px) {
   aside {
     margin-top: 50px;
+    padding: 0;
   }
 }
 
 aside > p {
   margin-top: 1.25rem;
+}
+
+@media (max-width: 556px) {
+  aside .testimonial-link {
+    margin: auto;
+  }
 }
 
 aside .testimonial-link a {
@@ -370,7 +392,14 @@ aside .testimonial-card {
 
 @media (max-width: 768px) {
   aside .testimonial-card {
-    width: 100%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 556px) {
+  aside .testimonial-card {
+    margin: 1.25rem auto 0 auto;
+    width: 90%;
   }
 }
 
@@ -530,7 +559,7 @@ aside:not(:first-child) {
 
 @media (max-width: 768px) {
   .footer {
-    padding: 55px 40px;
+    padding: 55px 30px;
   }
 }
 
@@ -588,6 +617,12 @@ aside:not(:first-child) {
 
 .footer__options .footer-links a {
   color: white;
+}
+
+@media (max-width: 768px) {
+  .footer__options .footer-sm {
+    margin: 20px auto 0 auto;
+  }
 }
 
 .footer__options .footer-sm a:not(:first-child) {

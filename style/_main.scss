@@ -94,7 +94,7 @@
   }
 }
 
-// hero section with testimonial card
+/* hero section with testimonial card */
 
 .testimonial {
   margin-top: 12.5rem;
@@ -103,23 +103,27 @@
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: top;
-  @media (max-width: 556px) {
+  @media (max-width: 768px) {
     margin-top: 6.25rem;
     background-image: url(/images/bg-curve-mobile.svg);
     flex-direction: column-reverse;
+    padding: 6.875rem 2rem;
   }
 }
 
 aside {
     @media (max-width:768px){
       margin-top: 50px;
-      // padding: 6.875rem 5rem;
+      padding: 0;
   }
   > p {
     margin-top: 1.25rem;
   }
 
   .testimonial-link {
+    @media (max-width:556px){
+      margin: auto;
+    }
     a {
       margin-top: 1.25rem;
       display: inline-flex;
@@ -148,7 +152,11 @@ aside {
     padding: 25px 30px;
 
     @media (max-width:768px){
-      width: 100%;
+      width: 60%;
+    }
+    @media (max-width:556px){
+      margin: 1.25rem auto 0 auto;
+      width: 90%;
     }
 
 
