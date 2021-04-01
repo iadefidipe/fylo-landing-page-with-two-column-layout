@@ -16,12 +16,12 @@ a, a:hover, a:active {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 600px) {
   a, a:hover, a:active {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -54,14 +54,14 @@ h3 {
 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #070439;
   line-height: 1.3rem;
 }
 
 @media (max-width: 600px) {
   p {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -159,6 +159,7 @@ header nav a:not(:first-child) {
   }
 }
 
+/* Hero secttion */
 .hero {
   margin: 6.25rem 3.125rem 0 3.125rem;
   color: #070439;
@@ -282,7 +283,7 @@ header nav a:not(:first-child) {
 @media (max-width: 1200px) {
   .hero__text .hero__form input[type="button"] {
     margin-left: 1rem;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -315,6 +316,7 @@ header nav a:not(:first-child) {
 
 @media (max-width: 556px) {
   .testimonial {
+    margin-top: 6.25rem;
     background-image: url(/images/bg-curve-mobile.svg);
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -358,13 +360,18 @@ aside .testimonial-link hr {
 
 aside .testimonial-card {
   margin-top: 1.25rem;
-  width: 356px;
-  height: 217px;
+  width: 60%;
   background: white;
   -webkit-box-shadow: 0 2px 3px gray;
           box-shadow: 0 2px 3px gray;
   border-radius: 0.625rem;
   padding: 25px 30px;
+}
+
+@media (max-width: 768px) {
+  aside .testimonial-card {
+    width: 100%;
+  }
 }
 
 aside .testimonial-card > img {
@@ -488,7 +495,7 @@ aside:not(:first-child) {
   .subscription__form .subscription-email {
     margin-top: 20px;
     padding: 0.9rem 1rem;
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -501,7 +508,6 @@ aside:not(:first-child) {
   display: block;
   background: #3065f8;
   padding: 1.125rem 2.1875rem;
-  font-size: 0.625rem;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: white;
@@ -512,7 +518,8 @@ aside:not(:first-child) {
   .subscription__form .subscription-button {
     margin: 20px auto 0 auto;
     padding: 0.9rem 1rem;
-    width: 80%;
+    width: 100%;
+    font-size: 0.75rem;
   }
 }
 
@@ -521,18 +528,23 @@ aside:not(:first-child) {
   padding: 110px 80px;
 }
 
-.footer__logo .logo {
-  color: white;
+@media (max-width: 768px) {
+  .footer {
+    padding: 55px 40px;
+  }
 }
 
 .footer__options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer__options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
 }
 
 .footer__options .footer-contact .contact {
@@ -564,6 +576,14 @@ aside:not(:first-child) {
       grid-template-rows: repeat(4, minmax(10px, auto));
   grid-row-gap: 20px;
   grid-column-gap: 50px;
+}
+
+@media (max-width: 768px) {
+  .footer__options .footer-links {
+    margin-top: 20px;
+    -ms-grid-columns: minmax(10px, auto);
+        grid-template-columns: minmax(10px, auto);
+  }
 }
 
 .footer__options .footer-links a {

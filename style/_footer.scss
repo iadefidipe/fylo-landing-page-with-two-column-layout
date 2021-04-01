@@ -1,16 +1,20 @@
 .footer{
     background: $clr-darkBlue;
     padding: 110px 80px;
+    @media (max-width:768px) {
+        padding: 55px 40px;
+        
+    }
     &__logo{
-        .logo{
-            color: white;
-        }
+    
     }
 
     &__options{
-        display: flex;
-        justify-content: space-between;
         margin-top: 20px;
+
+        @media (max-width:768px){
+            flex-flow: column;
+        }
 
         .footer-contact{
             .contact{
@@ -42,6 +46,12 @@
             grid-template-rows: repeat(4, minmax(10px, auto));
             grid-row-gap: 20px;
             grid-column-gap: 50px;
+            
+            @media (max-width:768px){
+                margin-top: 20px;
+                grid-template-columns: minmax(10px,auto);
+
+            }
             a{
                 color: $white;
             }
@@ -49,9 +59,6 @@
 
         .footer-sm{
             a{
-                
-
-                
 
                 &:not(:first-child){
                     margin-left: 10px;

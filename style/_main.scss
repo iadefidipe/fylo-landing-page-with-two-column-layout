@@ -1,4 +1,4 @@
-// hero section
+/* Hero secttion */
 .hero {
   margin: 6.25rem 3.125rem 0 3.125rem;
   color: $clr-darkBlue;
@@ -71,7 +71,7 @@
 
         @media (max-width:1200px){
             margin-left: 1rem;
-            font-size: 0.75rem;
+            font-size: $font-sz-mobile;
            
         }
         
@@ -104,6 +104,7 @@
   background-size: auto 100%;
   background-position: top;
   @media (max-width: 556px) {
+    margin-top: 6.25rem;
     background-image: url(/images/bg-curve-mobile.svg);
     flex-direction: column-reverse;
   }
@@ -112,6 +113,7 @@
 aside {
     @media (max-width:768px){
       margin-top: 50px;
+      // padding: 6.875rem 5rem;
   }
   > p {
     margin-top: 1.25rem;
@@ -139,12 +141,17 @@ aside {
 
   .testimonial-card {
     margin-top: 1.25rem;
-    width: 356px;
-    height: 217px;
+    width: 60%;
     background: $white;
     box-shadow: 0 2px 3px gray;
     border-radius: 0.625rem;
     padding: 25px 30px;
+
+    @media (max-width:768px){
+      width: 100%;
+    }
+
+
     > img {
       width: 0.75rem;
       height: 0.75rem;
@@ -225,7 +232,7 @@ aside {
         @media (max-width:768px){
             margin-top: 20px;
             padding: 0.9rem 1rem;
-            width: 80%;
+            width: 100%;
         }
 
     }
@@ -238,7 +245,7 @@ aside {
       display: block;
       background: $clr-brightBlue;
       padding: 1.125rem 2.1875rem;
-      font-size: 0.625rem;
+      
       font-family: $font-raleway;
       font-weight: $font-bold;
       color: $white;
@@ -247,7 +254,8 @@ aside {
       @media (max-width:768px){
             margin: 20px auto 0 auto;
             padding: 0.9rem 1rem;
-            width: 80%;
+            width: 100%;
+            font-size: 0.75rem;
         }
     }
   }
