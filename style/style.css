@@ -316,6 +316,16 @@ header nav a:not(:first-child) {
 @media (max-width: 556px) {
   .testimonial {
     background-image: url(/images/bg-curve-mobile.svg);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  aside {
+    margin-top: 50px;
   }
 }
 
@@ -390,7 +400,12 @@ aside:not(:first-child) {
 
 > img {
   width: 34.5rem;
-  height: auto;
+}
+
+@media (max-width: 768px) {
+  > img {
+    width: 100%;
+  }
 }
 
 .subscription {
@@ -399,11 +414,28 @@ aside:not(:first-child) {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .subscription {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    padding: 7rem 3.125rem;
+  }
+}
+
 .subscription__copy p {
   margin-top: 20px;
   color: white;
   width: 60%;
   line-height: 1.7rem;
+}
+
+@media (max-width: 768px) {
+  .subscription__copy p {
+    width: 100%;
+  }
 }
 
 .subscription__form .subscription-email {
@@ -437,6 +469,29 @@ aside:not(:first-child) {
   opacity: 0.5;
 }
 
+@media (max-width: 768px) {
+  .subscription__form .subscription-email::-webkit-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .subscription__form .subscription-email:-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .subscription__form .subscription-email::-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .subscription__form .subscription-email::placeholder {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscription__form .subscription-email {
+    margin-top: 20px;
+    padding: 0.9rem 1rem;
+    width: 80%;
+  }
+}
+
 .subscription__form .subscription-button {
   width: 200px;
   margin-top: 1.25rem;
@@ -451,6 +506,14 @@ aside:not(:first-child) {
   font-weight: 700;
   color: white;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .subscription__form .subscription-button {
+    margin: 20px auto 0 auto;
+    padding: 0.9rem 1rem;
+    width: 80%;
+  }
 }
 
 .footer {

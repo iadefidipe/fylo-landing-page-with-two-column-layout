@@ -105,10 +105,14 @@
   background-position: top;
   @media (max-width: 556px) {
     background-image: url(/images/bg-curve-mobile.svg);
+    flex-direction: column-reverse;
   }
 }
 
 aside {
+    @media (max-width:768px){
+      margin-top: 50px;
+  }
   > p {
     margin-top: 1.25rem;
   }
@@ -174,20 +178,32 @@ aside {
 
 > img {
   width: 34.5rem;
-  height: auto;
+  @media (max-width:768px){
+      width: 100%;
+  }
 }
 
 .subscription {
   background: $clr-desaturatedBlue;
   padding: 10.625rem 5rem;
   color: $white;
+ 
+  @media (max-width:768px){
+      flex-flow: column;
+      text-align: center;
+      padding: 7rem 3.125rem;
+  }
 
   &__copy {
+    
     p {
       margin-top: 20px;
       color: $white;
       width: 60%;
       line-height: 1.7rem;
+        @media (max-width:768px){
+        width: 100%;
+    }
     }
   }
 
@@ -202,7 +218,16 @@ aside {
         font-family: $font-openSans;
         font-size: 0.875rem;
         opacity: 0.5;
+        @media (max-width:768px){
+            font-size: 0.75rem;
+        }
       }
+        @media (max-width:768px){
+            margin-top: 20px;
+            padding: 0.9rem 1rem;
+            width: 80%;
+        }
+
     }
 
     .subscription-button {
@@ -218,6 +243,12 @@ aside {
       font-weight: $font-bold;
       color: $white;
       border: none;
+
+      @media (max-width:768px){
+            margin: 20px auto 0 auto;
+            padding: 0.9rem 1rem;
+            width: 80%;
+        }
     }
   }
 }
